@@ -1,0 +1,104 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenMinds — Resultados</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="resultados">
+
+  <section class="container-resultados">
+    <h1>Resultados da Análise</h1>
+    <p>Com base nos dados inseridos, veja abaixo suas métricas e metas personalizadas.</p>
+
+    <!-- Gráficos principais -->
+    <div class="cards-graficos">
+
+      <div class="card grafico">
+        <h3>Redução de CO₂ (t/ano)</h3>
+        <div class="grafico-pizza" data-percent="72">
+          <span>72%</span>
+        </div>
+      </div>
+
+      <div class="card grafico">
+        <h3>Economia Anual (R$)</h3>
+        <div class="grafico-barra" data-value="320000">
+          <div class="barra"></div>
+          <span>R$ 320.000</span>
+        </div>
+      </div>
+
+      <div class="card grafico">
+        <h3>ROI (meses)</h3>
+        <div class="grafico-barra" data-value="8">
+          <div class="barra" style="width: 80%;"></div>
+          <span>8 meses</span>
+        </div>
+      </div>
+
+      <div class="card grafico">
+        <h3>Redução Água (%)</h3>
+        <div class="grafico-pizza" data-percent="46">
+          <span>46%</span>
+        </div>
+      </div>
+
+      <div class="card grafico">
+        <h3>Redução Energia (%)</h3>
+        <div class="grafico-pizza" data-percent="38">
+          <span>38%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quadro de Fornecedores e Produtos -->
+    <div class="card quadro">
+      <h3>Fornecedores e Produtos Sugeridos</h3>
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Fornecedor</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Painel Solar Fotovoltaico</td>
+            <td>EcoEnergy Brasil</td>
+            <td>Geração de energia limpa para reduzir emissões.</td>
+          </tr>
+          <tr>
+            <td>Sistema de Reuso de Água</td>
+            <td>AquaLoop</td>
+            <td>Reduz consumo hídrico e custo de operação.</td>
+          </tr>
+          <tr>
+            <td>Gestor de Energia Inteligente</td>
+            <td>SmartWatt Solutions</td>
+            <td>Monitoramento em tempo real de eficiência energética.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Quadro de Metas -->
+    <div class="card quadro">
+      <h3>Metas Previstas</h3>
+      <ul class="lista-metas">
+        <li>Meta 1 — Reduzir CO₂ em 25% em 12 meses.</li>
+        <li>Meta 2 — Economizar R$ 150 mil anuais em energia.</li>
+        <li>Meta 3 — Implementar ISO 14001 até o próximo exercício.</li>
+        <li>Meta 4 — Reutilizar 50% da água consumida.</li>
+        <li>Meta 5 — Atingir 80% de eficiência energética em 2 anos.</li>
+      </ul>
+    </div>
+
+    <button class="btn-principal" onclick="window.location.href='index.html'">Nova Análise</button>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

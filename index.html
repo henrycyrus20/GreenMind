@@ -1,0 +1,141 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenMind — Início</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+      background-color: #000000;
+      color: #E0E0E0;
+    }
+
+    /* GRID PRINCIPAL */
+    .layout {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      width: 100%;
+      height: 100vh;
+    }
+
+    /* LATERAIS */
+    .floresta {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* CENTRO */
+    .faixa-central {
+      background-color: #FDFBD4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 0 25px rgba(71, 197, 60, 0.35); /* verde da logo */
+    }
+
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      max-width: 600px;
+    }
+
+    .logo {
+      width: 300px; /* 50% maior */
+      height: auto;
+      animation: fadeZoom 1s ease-in-out;
+    }
+
+    @keyframes fadeZoom {
+      0% { opacity: 0; transform: scale(0.82); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    p {
+      font-size: 18px;
+      color: #41bd3d;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    /* BOTÃO */
+    .botao {
+      background-color: #47C53C;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 50px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 18px rgba(71, 197, 60, 0.55);
+    }
+
+    .botao:hover {
+      background-color: #6DDE64;
+      transform: scale(1.06);
+      box-shadow: 0 0 22px rgba(109, 222, 100, 0.7);
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: 25vh 50vh 25vh;
+      }
+
+      .logo {
+        width: 180px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- ESQUERDA -->
+    <img class="floresta" src="assets/images/floresta copa.jpg" alt="imagem de floresta" />
+
+    <!-- CENTRO -->
+    <div class="faixa-central">
+      <div class="conteudo">
+        <img src="assets/images/Logo.png" class="logo" alt="GreenMind Logo">
+
+        <p>Transforme dados ambientais em decisões inteligentes e sustentáveis.</p>
+
+        <button class="botao" onclick="location.href='caracteristicas.html'">
+          Começar Análise
+        </button>
+      </div>
+    </div>
+
+    <!-- DIREITA -->
+    <img class="floresta" src="assets/images/floresta copa.jpg" alt="imagem de floresta" />
+
+  </div>
+
+</body>
+</html>
